@@ -1,7 +1,6 @@
 .container {
   height: 100vh;
   width: 100%;
-  padding: 50px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -33,6 +32,8 @@
   display: flex;
   scrollbar-width: none;
   -ms-overflow-style: none;
+
+  
 }
 
 .carousel-wrapper::-webkit-scrollbar {
@@ -44,6 +45,10 @@
   gap: 50vw;
   display: flex;
   align-items: center;
-  padding-left: calc(50vw - 250px);
-  padding-right: calc(50vw - 250px);
+  padding-left: max(1rem, calc(50vw - 8.5em));
+  padding-right: max(1rem, calc(50vw - 8.5em));
+
+  background-image: url('/assets/museumwall.png');
+  background-size: auto 100vh;
+  background-position: left center;
 }

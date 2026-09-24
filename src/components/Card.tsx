@@ -19,8 +19,8 @@ export default function Card({value}: CardProps) {
   
   return (
     <div className="card">
-      <h2>{selected.title}</h2>
       <img src={selected.image} alt={selected.title} />
+      <h2>{selected.title}</h2>
       <p>{selected.description}</p>
     </div>
   )
